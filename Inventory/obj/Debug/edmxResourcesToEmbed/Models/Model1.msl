@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="inventoryModelStoreContainer" CdmEntityContainer="inventoryEntities">
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="inventoryModel.products">
+        <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="IDTable" ColumnName="IDTable" />
+          <ScalarProperty Name="IDProduct" ColumnName="IDProduct" />
+          <ScalarProperty Name="Product" ColumnName="Product" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Modified_date" ColumnName="Modified_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

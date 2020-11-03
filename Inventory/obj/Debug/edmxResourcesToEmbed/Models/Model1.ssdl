@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="inventoryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="products">
+    <Key>
+      <PropertyRef Name="IDTable" />
+    </Key>
+    <Property Name="IDTable" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDProduct" Type="int" Nullable="false" />
+    <Property Name="Product" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Modified_date" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="inventoryModelStoreContainer">
+    <EntitySet Name="products" EntityType="Self.products" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
